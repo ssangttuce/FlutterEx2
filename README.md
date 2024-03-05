@@ -1,16 +1,21 @@
-# second_app
+# Second App
 
-A new Flutter project.
+<hr>
+A simple quiz app.
+no database, no server, only Flutter UI and Dart files.
 
-## Getting Started
+# How to use
 
-This project is a starting point for a Flutter application.
+<hr>
+questions.dart is where questions and answers existing. 
+In every question, the first answer is the true answer.
 
-A few resources to get you started if this is your first Flutter project:
+If you choose the right answer which is stored at 0 index, app knows what you choose.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Quiz app shows you how many questions you solved and choosed right answers.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![simulator_screenshot_021EDFC8-0039-491F-97E6-96E1A592CBF8](https://github.com/ssangttuce/FlutterEx2/assets/88099593/fa8a10c3-6efc-4ba9-afb8-e413ad653500)
+
+![simulator_screenshot_06B92B2B-0DDA-4117-A8E8-88B461ACE3B2](https://github.com/ssangttuce/FlutterEx2/assets/88099593/c430e8e2-2f5d-4661-a809-fb09778e4ed6)
+
+![simulator_screenshot_874221E0-D795-40F6-BA41-61CC6343CED9](https://github.com/ssangttuce/FlutterEx2/assets/88099593/6772a4ac-ff04-40df-9717-094a706608d9)
