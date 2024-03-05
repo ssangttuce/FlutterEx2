@@ -18,7 +18,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   var currentQuestionIndex = 0;
 
   void answerQuestion(String selectedAnswer) {
-    widget.onSelectAnswer("...");
+    widget.onSelectAnswer(selectedAnswer);
     setState(() {
       currentQuestionIndex++;
     });
@@ -54,22 +54,6 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
                 },
               );
             }),
-            // AnswerButton(
-            //   answerText: currentQuestion.answers[0],
-            //   onTap: () {},
-            // ),
-            // AnswerButton(
-            //   answerText: currentQuestion.answers[1],
-            //   onTap: () {},
-            // ),
-            // AnswerButton(
-            //   answerText: currentQuestion.answers[2],
-            //   onTap: () {},
-            // ),
-            // AnswerButton(
-            //   answerText: currentQuestion.answers[3],
-            //   onTap: () {},
-            // ),
           ],
         ),
       ),
