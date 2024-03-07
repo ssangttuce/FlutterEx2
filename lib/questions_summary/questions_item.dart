@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:second_app/questions_summary/questions_identifier.dart';
 
 class SummaryItem extends StatelessWidget {
   const SummaryItem(this.itemData, {super.key});
@@ -17,18 +18,9 @@ class SummaryItem extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CircleAvatar(
-            radius: 15,
-            backgroundColor: isCorrectAnswer
-                ? const Color.fromARGB(180, 88, 180, 255)
-                : const Color.fromARGB(180, 255, 88, 88),
-            child: Text(
-              ((itemData["question_index"] as int) + 1).toString(),
-              style: const TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+          QuestionsIdentifier(
+            isCorrectAnswer: isCorrectAnswer,
+            questionIndex: itemData["question_index"] as int,
           ),
           const SizedBox(
             width: 15,
